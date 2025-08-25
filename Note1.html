@@ -149,6 +149,7 @@ window.Quarto = {
   <li><a href="#a-bit-of-math" id="toc-a-bit-of-math" class="nav-link" data-scroll-target="#a-bit-of-math"><span class="header-section-number">1.2</span> A bit of math</a></li>
   <li><a href="#a-tiny-python-example-renders-a-plot" id="toc-a-tiny-python-example-renders-a-plot" class="nav-link" data-scroll-target="#a-tiny-python-example-renders-a-plot"><span class="header-section-number">1.3</span> A tiny Python example (renders a plot)</a></li>
   </ul></li>
+  <li><a href="#plot-the-normal-curve-and-shade-between--2-and-2" id="toc-plot-the-normal-curve-and-shade-between--2-and-2" class="nav-link" data-scroll-target="#plot-the-normal-curve-and-shade-between--2-and-2"><span class="header-section-number">2</span> Plot the normal curve and shade between -2 and 2</a></li>
   </ul>
 </nav>
     </div>
@@ -196,12 +197,16 @@ window.Quarto = {
 </section>
 <section id="a-tiny-python-example-renders-a-plot" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="a-tiny-python-example-renders-a-plot"><span class="header-section-number">1.3</span> A tiny Python example (renders a plot)</h2>
-<p>import numpy as np, matplotlib.pyplot as plt from scipy.stats import norm x = np.linspace(-4,4,401) y = norm.pdf(x)</p>
-<p>#plot the normal curve from xlim=-4 and 4, and then fill the area between -2 and 2 in red color) plt.xlim(-4, 4) plt.ylim(0, 0.5) plt.plot(x, y, color=‘black’) plt.fill_between(x,0,y, where=(x&gt;=-2) &amp; (x&lt;=2), color=‘red’) plt.title(“Standard Normal PDF”); plt.xlabel(“z”); plt.ylabel(“density”) plt.tight_layout(); plt.show()</p>
-
-
-
+<p>import numpy as np, matplotlib.pyplot as plt from scipy.stats import norm</p>
+<p>x = np.linspace(-4,4,401) y = norm.pdf(x)</p>
 </section>
+</section>
+<section id="plot-the-normal-curve-and-shade-between--2-and-2" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Plot the normal curve and shade between -2 and 2</h1>
+<p>plt.figure() plt.plot(x, y, color=“black”) plt.fill_between(x, 0, y, where=(x&gt;=-2) &amp; (x&lt;=2), color=“red”, alpha=0.35) plt.xlim(-4, 4); plt.ylim(0, 0.5) plt.title(“Standard Normal PDF”); plt.xlabel(“z”); plt.ylabel(“density”) plt.tight_layout() plt.show()</p>
+
+
+
 </section>
 
 </main> <!-- /main -->
@@ -277,7 +282,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/gewankim\.github\.io\/stat-notes\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

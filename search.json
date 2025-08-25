@@ -11,7 +11,7 @@
     "href": "Note1.html",
     "title": "Stat 243Z: Elementary Statistics",
     "section": "",
-    "text": "Welcome to Stat 243Z.\n\n\n\nInstructor: Dr. Daniel Kim\nTitle: Elementary Statistics\n\n\n\n\nThe standard normal CDF is ( (z) = P(Z z) ).\n\n\n\nimport numpy as np, matplotlib.pyplot as plt from scipy.stats import norm x = np.linspace(-4,4,401) y = norm.pdf(x)\n#plot the normal curve from xlim=-4 and 4, and then fill the area between -2 and 2 in red color) plt.xlim(-4, 4) plt.ylim(0, 0.5) plt.plot(x, y, color=‘black’) plt.fill_between(x,0,y, where=(x&gt;=-2) & (x&lt;=2), color=‘red’) plt.title(“Standard Normal PDF”); plt.xlabel(“z”); plt.ylabel(“density”) plt.tight_layout(); plt.show()"
+    "text": "Welcome to Stat 243Z.\n\n\n\nInstructor: Dr. Daniel Kim\nTitle: Elementary Statistics\n\n\n\n\nThe standard normal CDF is ( (z) = P(Z z) ).\n\n\n\nimport numpy as np, matplotlib.pyplot as plt from scipy.stats import norm\nx = np.linspace(-4,4,401) y = norm.pdf(x)"
   },
   {
     "objectID": "Note1.html#course-info",
@@ -32,13 +32,20 @@
     "href": "Note1.html#a-tiny-python-example-renders-a-plot",
     "title": "Stat 243Z: Elementary Statistics",
     "section": "",
-    "text": "import numpy as np, matplotlib.pyplot as plt from scipy.stats import norm x = np.linspace(-4,4,401) y = norm.pdf(x)\n#plot the normal curve from xlim=-4 and 4, and then fill the area between -2 and 2 in red color) plt.xlim(-4, 4) plt.ylim(0, 0.5) plt.plot(x, y, color=‘black’) plt.fill_between(x,0,y, where=(x&gt;=-2) & (x&lt;=2), color=‘red’) plt.title(“Standard Normal PDF”); plt.xlabel(“z”); plt.ylabel(“density”) plt.tight_layout(); plt.show()"
+    "text": "import numpy as np, matplotlib.pyplot as plt from scipy.stats import norm\nx = np.linspace(-4,4,401) y = norm.pdf(x)"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "stats-notes-starter",
+    "title": "Stat 243Z: Elementary Statistics",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Use the Lectures menu to navigate notes.\n\n\n\nNote 1"
+  },
+  {
+    "objectID": "index.html#latest",
+    "href": "index.html#latest",
+    "title": "Stat 243Z: Elementary Statistics",
+    "section": "",
+    "text": "Note 1"
   }
 ]
