@@ -1,7 +1,18 @@
 ---
-title: "stats-notes-starter"
+title: "Stat 243Z: Elementary Statistics"
+author: "Dr. Daniel Kim"
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    math: mathjax
 ---
 
-This is a Quarto website.
+# Welcome
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Use the **Lectures** menu to navigate notes.
+
+## Latest
+- [Note 1](Note1.html)
+
