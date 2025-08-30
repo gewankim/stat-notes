@@ -1,6 +1,6 @@
 ---
-title: "Stat 243Z: Elementary Statistics"
-author: "Dr. Daniel Kim"
+title: "SOU Math Department Stat 243Z: Elementary Statistics"
+author: "Professor Daniel Kim, Ph.D."
 format:
   html:
     theme: cosmo
